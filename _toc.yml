@@ -5,5 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: outline
-title: Project Outline
-
+- file: code

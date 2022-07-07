@@ -1,2 +1,8 @@
 # Introduction
-This is the title page for the book.
+
+This is an introduction page for this book.
+
+This is a table of contents.
+
+```{tableofcontents}
+```
