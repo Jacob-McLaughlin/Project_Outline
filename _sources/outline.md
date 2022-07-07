@@ -1,4 +1,4 @@
-#Outline
+# Outline
 <h1> Project Outline </h1>
 
 <h3> Project Overview </h3>
