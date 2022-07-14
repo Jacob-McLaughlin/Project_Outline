@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>patient &#8212; User Guide</title>
+    <title>Patient Selection &#8212; User Guide</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -130,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   patient
+   Patient Selection
   </a>
  </li>
 </ul>
@@ -184,6 +184,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/patient_selection.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -251,6 +280,23 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
+        <a href="_sources/patient_selection.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
         <a href="_sources/patient_selection.md"
    class="headerbtn"
    data-toggle="tooltip"
@@ -310,38 +356,10 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   patient
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis">
+   Analysis
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupytext-cell-metadata-filter-all-formats-md-myst-text-representation-extension-md-format-name-myst-format-version-0-13-jupytext-version-1-11-5-kernelspec-display-name-python-3-language-python-name-python3">
-   jupytext:
-cell_metadata_filter: -all
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#patient-selection">
-   Patient Selection
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis">
-     Analysis
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -352,7 +370,7 @@ name: python3
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>patient</h1>
+                <h1>Patient Selection</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -362,38 +380,10 @@ name: python3
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   patient
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis">
+   Analysis
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupytext-cell-metadata-filter-all-formats-md-myst-text-representation-extension-md-format-name-myst-format-version-0-13-jupytext-version-1-11-5-kernelspec-display-name-python-3-language-python-name-python3">
-   jupytext:
-cell_metadata_filter: -all
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#patient-selection">
-   Patient Selection
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis">
-     Analysis
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -405,29 +395,24 @@ name: python3
                 
               <div>
                 
-  <section id="patient">
-<h1>patient<a class="headerlink" href="#patient" title="Permalink to this headline">#</a></h1>
-</section>
-<section id="jupytext-cell-metadata-filter-all-formats-md-myst-text-representation-extension-md-format-name-myst-format-version-0-13-jupytext-version-1-11-5-kernelspec-display-name-python-3-language-python-name-python3">
-<h1>jupytext:
-cell_metadata_filter: -all
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3<a class="headerlink" href="#jupytext-cell-metadata-filter-all-formats-md-myst-text-representation-extension-md-format-name-myst-format-version-0-13-jupytext-version-1-11-5-kernelspec-display-name-python-3-language-python-name-python3" title="Permalink to this headline">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="patient-selection">
+  <section class="tex2jax_ignore mathjax_ignore" id="patient-selection">
 <h1>Patient Selection<a class="headerlink" href="#patient-selection" title="Permalink to this headline">#</a></h1>
 <p>This page will contain information on the patient selection criteria for the study.</p>
 <section id="analysis">
 <h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">#</a></h2>
 <p>It also contains room for supporting analyis in python.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Placeholder&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Placeholder
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
